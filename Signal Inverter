@@ -1,0 +1,13 @@
+`timescale 1ns / 1ps
+
+// INVERTER SIGNAL
+// iDEA IS THAT WHEN THE ir SENSOR IS TAKING INFOR IN AN led TURNS ON
+
+module IR_test(
+input signal,
+ output LED
+    );
+    
+ assign LED = ~signal;
+
+endmodule
