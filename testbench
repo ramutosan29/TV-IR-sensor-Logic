@@ -1,0 +1,23 @@
+`timescale 1ns / 1ps
+
+module TB(
+
+    );
+reg IR = 0;
+wire led;   
+    
+    IR_test uut1( .signal(IR), .LED(led)); 
+ 
+ 
+  
+initial 
+begin
+#10 IR = 1;
+#10 IR = 0;
+#10 IR = 1;
+#10 IR = 0;
+#10 IR = 1;
+#10 IR = 0;
+#10 IR = 1;
+end
+endmodule
